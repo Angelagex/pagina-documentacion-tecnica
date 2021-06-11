@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generalidades de Javascript</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>Generalidades de Javascript</header>
+        <ul>
+            <li><a class="nav-link" href="#Introducción">Introducción</a></li>
+            <li><a class="nav-link" href="#¿Qué_es_Javascript?">¿Qué es Javascript?</a></li>
+            <li><a class="nav-link" href="#Comenta_tu_código_Javascript">Comenta tu código Javascript</a></li>
+            <li><a class="nav-link" href="#Declara_variables_de_JavaScript">Declara variables de JavaScript</a></li>
+            <li><a class="nav-link" href="#Almacenar_valores_con_el_operador_de_asignación">Almacenar valores con el operador de asignación</a></li>
+            <li><a class="nav-link" href="#Asigna_el_valor_de_una_variable_a_otra_variable">Asigna el valor de una variable a otra variable</a></li>
+            <li><a class="nav-link" href="#Inicializa_variables_con_el_operador_de_asignación">Inicializa variables con el operador de asignación</a></li>
+            <li><a class="nav-link" href="#Comprendiendo_las_variables_no_inicializadas">Comprendiendo las variables no inicializadas</a></li>
+            <li><a class="nav-link" href="#Referencias">Referencias</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="Introducción">
+            <header>Introducción</header>
+            <article>
+                <p> A principios de los años 90, la mayoría de usuarios que se conectaban a Internet lo hacían con
+                    módems a una velocidad máxima de 28.8 kbps. En esa época, empezaban a desarrollarse las primeras
+                    aplicaciones web y por tanto, las páginas web comenzaban a incluir formularios complejos.
+
+                    Con unas aplicaciones web cada vez más complejas y una velocidad de navegación tan lenta, surgió la
+                    necesidad de un lenguaje de programación que se ejecutara en el navegador del usuario. De esta
+                    forma, si el usuario no rellenaba correctamente un formulario, no se le hacía esperar mucho tiempo
+                    hasta que el servidor volviera a mostrar el formulario indicando los errores existentes.
+                    Brendan Eich, un programador que trabajaba en Netscape, pensó que podría solucionar este problema
+                    adaptando otras tecnologías existentes (como ScriptEase) al navegador Netscape Navigator 2.0, que
+                    iba a lanzarse en 1995. Inicialmente, Eich denominó a su lenguaje LiveScript.
+
+                    Posteriormente, Netscape firmó una alianza con Sun Microsystems para el desarrollo del nuevo
+                    lenguaje de programación. Además, justo antes del lanzamiento Netscape decidió cambiar el nombre por
+                    el de JavaScript. La razón del cambio de nombre fue exclusivamente por marketing, ya que Java era la
+                    palabra de moda en el mundo informático y de Internet de la época.
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="¿Qué_es_Javascript?">
+            <header>¿Qué es Javascript?</header>
+            <article>
+                <p>JavaScript es un lenguaje de programación o de secuencias de comandos que te permite implementar
+                    funciones complejas en páginas web, cada vez que una página web hace algo más que sentarse allí y
+                    mostrar información estática para que la veas, muestra oportunas actualizaciones de contenido, mapas
+                    interactivos, animación de Gráficos 2D/3D, desplazamiento de máquinas reproductoras de vídeo, etc.,
+                    puedes apostar que probablemente JavaScript está involucrado.</p>
+                <p>Por ejemplo, sus contenidos podrían ser párrafos, una lista con viñetas, o imágenes y tablas de
+                    datos. Como lo sugiere el título, este artículo te dará una comprensión básica de HTML y cúal es su
+                    función.</p>
+                <p>HTML no es un lenguaje de programación; es un lenguaje de marcado que define la estructura de tu
+                    contenido. HTML consiste en una serie de elementos que usarás para encerrar diferentes partes del
+                    contenido para que se vean o comporten de una determinada manera. Las etiquetas de encierre pueden
+                    hacer de una palabra o una imagen un hipervínculo a otro sitio, se pueden cambiar palabras a
+                    cursiva, agrandar o achicar la letra, etc.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Comenta_tu_código_Javascript">
+            <header>Comenta tu código Javascript</header>
+            <article>
+                <p>Los comentarios son líneas de código que JavaScript ignorará intencionalmente. Los comentarios son
+                    una gran manera de dejar notas para ti mismo y a otras personas que más tarde tengan que averiguar
+                    qué hace ese código.
+
+                    Hay dos maneras de escribir comentarios en JavaScript:
+
+                    Usar <code>//</code> le dirá a JavaScript que ignore el resto del texto en la línea actual. Este es
+                    un comentario
+                    en línea:</p>
+
+                <code>// This is an in-line comment.</code>
+                <p>Puedes hacer un comentario multilínea comenzando con <code>/*</code> y terminando con
+                    <code>*/</code>. Este es un comentario
+                    multilínea:
+                </p>
+                <code>/* This is a
+                        multi-line comment */</code>
+
+            </article>
+        </section>
+        <section class="main-section" id="Declara_variables_de_JavaScript">
+            <header>Declara variables de JavaScript</header>
+            <article>
+                <p>En informática, los datos son cualquier cosa que tenga sentido para la computadora. JavaScript
+                    proporciona ocho tipos de datos diferentes, los cuales son <code>undefined</code>,
+                    <code>null</code>, <code>boolean</code>, <code>string</code>, <code>symbol</code>,
+                    <code>bigint</code>, <code>number</code>, y <code>object</code>.
+                </p>
+                <p>Las variables permiten a los ordenadores almacenar y manipular datos de forma dinámica. Hacen esto
+                    usando una "etiqueta" para apuntar a los datos en lugar de usar los datos en sí. Cualquiera de los
+                    ocho tipos de datos puede almacenarse en una variable.
+
+                    Las variables son similares a las variables x, e y que usan en matemáticas, lo que significa que son
+                    un nombre simple para representar los datos a los que queremos hacer referencia. Las variables de
+                    computadora difieren de las variables matemáticas en que pueden almacenar diferentes valores en
+                    diferentes momentos.
+
+                    Le decimos a JavaScript que cree o declare una variable poniendo la palabra clave <code class="var">var</code>
+                    delante de
+                    ella, así:</p>
+                <code class="var">var </code><code>ourName;</code>
+            </article>
+        </section>
+        <section class="main-section" id="Almacenar_valores_con_el_operador_de_asignación">
+            <header>Almacenar valores con el operador de asignación</header>
+            <article>
+                <p>En JavaScript, puedes almacenar un valor en una variable con el operador de asignación
+                    (<code>=</code>).</p>
+
+                <code>myVariable = 5;</code>
+                <p>Esto asigna el valor numérico (<code>Number</code>) <code>5</code> a <code>myVariable</code>.</p>
+
+                <p> hay algunos cálculos a la derecha del operador =, se realizan antes de que el valor se asigne a
+                    la variable a la izquierda del operador.</p>
+                <code>myVar;<br>
+                    myVar = 5;</code>
+                <p>Primero, este código crea una variable llamada <code>myVar</code>. Luego, el código asigna
+                    <code>5</code> a <code>myVar</code>. Ahora, si
+                    <code>myVar</code> aparece de nuevo en el código, el programa lo tratará como si fuera
+                    <code>5</code>.
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="Asigna_el_valor_de_una_variable_a_otra_variable">
+            <header>Asigna el valor de una variable a otra variable</header>
+            <article>
+                <p>Después de asignar un valor a una variable usando el operador de asignación, puedes asignar el valor
+                    de esa variable a otra variable usando el mismo operador de asignación.</p>
+                <code class="var">var </code><code>myVar;<br>
+                        myVar = 5;<br>
+                        <code class="var">var </code><code>myNum;<br>
+                        myNum = myVar;</code> 
+                <p>Lo anterior declara una variable <code>myVar</code> sin valor, y luego le asigna el valor
+                    <code>5</code>. A continuación, una
+                    variable llamada <code>myNum</code> es declarada, tambien sin valor. Luego, el contenido de
+                    <code>myVar</code> (que es <code>5</code>) se
+                    asigna a la variable <code>myNum</code>. Ahora, <code>myNum</code> también tiene el valor de
+                    <code>5</code>.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Inicializa_variables_con_el_operador_de_asignación">
+            <header>Inicializa variables con el operador de asignación</header>
+            <article>
+                <p>Es común inicializar una variable a un valor inicial en la misma línea que es declarada.</p>
+                <code class="var">var </code><code>myVar = 0;</code>
+                <p>Crea una nueva variable llamada <code>myVar</code> y le asigna un valor inicial de <code>0</code>.
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="Comprendiendo_las_variables_no_inicializadas">
+            <header>Comprendiendo las variables no inicializadas</header>
+            <article>
+                <p>Cuando las variables de JavaScript son declaradas, tienen un valor inicial de <code>undefined</code> (indefinido).
+                    Si haces una operación matemática en una variable <code>undefined</code>, tu resultado será <code>NaN</code> lo que significa
+                    "Not a Number" (no es un número). Si concatenas una cadena con una variable <code>undefined</code>, obtendrás una
+                    cadena literal con valor <code>undefined</code>.</p>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="Referencias">
+            <header>Referencias</header>
+            <article>
+                <ul>
+                    <li>Freecodecamp.org</li>
+                    <li>Developer.mozilla.org</li>
+                    <li>Uniwebsidad.com</li>
+                    <li>Formatalent.com</li>
+                    <li>hackaboss.com</li>
+                </ul>
+            </article>
+
+        </section>
+    </main>
+</body>
+
+</html>
